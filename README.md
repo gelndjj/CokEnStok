@@ -1,3 +1,7 @@
+
+
+https://github.com/gelndjj/_WORK_CokEnStok/assets/81557672/2662b725-a1f8-461f-8dde-b966048b99a7
+
 # CokEnStok - Dynamic Stock Management Application
 
 CokEnStok is a dynamic stock management tool designed to cater to diverse inventory needs. Whether it's IT assets or general warehouse stock, this desktop application empowers users to create, maintain, and monitor stock databases with ease and efficiency.
@@ -35,5 +39,6 @@ Before running CokEnStok, ensure you have the following:
 | ![Graphic Evolution](screenshots/graphic_evo.png) | |
 | Graphic Evolution | |
 
-### Video Basic Instructions
+### Contact
+[LinkedIn](https://www.linkedin.com/in/jonathanduthil/)
 
