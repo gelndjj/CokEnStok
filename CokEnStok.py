@@ -1006,7 +1006,8 @@ def refresh_gui():
 def open_evolution_window():
     evolution_window = tk.Toplevel(root)
     evolution_window.title("Evolution")
-    evolution_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    evolution_window.iconbitmap(icon_path)
 
     # Combobox for selecting a table
     table_combo = ttk.Combobox(evolution_window)
@@ -1125,7 +1126,8 @@ def log_action_to_json(db_name, action, item_details):
 def open_snitch_window():
     snitch_window = tk.Toplevel(root)
     snitch_window.title("Snitch Log")
-    snitch_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    snitch_window.iconbitmap(icon_path)
 
     # Create a scrolled text widget to display the contents of the JSON file
     text_area = scrolledtext.ScrolledText(snitch_window, wrap=tk.WORD)
@@ -1204,7 +1206,8 @@ def open_warning_level_window(pre_fill_data=None):
     global saved_content_combo
     warning_window = tk.Toplevel(root)
     warning_window.title("Warning Level Settings")
-    warning_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    warning_window.iconbitmap(icon_path)
 
     # Split the window into left and right frames
     left_frame = ttk.Frame(warning_window)
@@ -1593,7 +1596,8 @@ def open_email_alerts_window():
     # Create a new top-level window
     alerts_window = tk.Toplevel(root)
     alerts_window.title("Email Alerts")
-    alerts_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    alerts_window.iconbitmap(icon_path)
 
     # Create a Treeview to display the alert settings
     alert_tree = ttk.Treeview(alerts_window, columns=("Table", "Threshold", "SMTP Config", "Email Addresses"), show="headings")
@@ -1754,7 +1758,8 @@ def open_email_config_window():
     """Open a window to configure and save email settings."""
     config_window = tk.Toplevel(root)
     config_window.title("Configure Email Account")
-    config_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    config_window.iconbitmap(icon_path)
 
     # Combobox for selecting YAML configuration files
     config_files_combo = ttk.Combobox(config_window, values=list_yaml_files())
@@ -1825,7 +1830,8 @@ def open_link(url):
 def about():
     about_window = tk.Toplevel(root)
     about_window.title("About")
-    about_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    about_window.iconbitmap(icon_path)
     about_window.geometry("400x300")  # Adjust the size as needed
     about_window.resizable(0,0)
 
@@ -1880,7 +1886,8 @@ def open_keyboard_shortcuts_window():
     # Create a new top-level window
     shortcuts_window = tk.Toplevel(root)
     shortcuts_window.title("Keyboard Shortcuts")
-    shortcuts_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    shortcuts_window.iconbitmap(icon_path)
 
     # Create a Text widget to display the keyboard shortcuts
     text_widget = tk.Text(shortcuts_window, wrap='word')
@@ -1941,7 +1948,8 @@ def manage_address_book(email_tree):
     global address_book_tree
     address_book_window = tk.Toplevel(root)
     address_book_window.title("Address Book")
-    address_book_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    address_book_window.iconbitmap(icon_path)
     address_book_window.geometry("300x400")
 
     # Load existing addresses from the address book file
@@ -2025,7 +2033,8 @@ def clear_stats_current_table():
 # Initialize the themed main window
 root = ThemedTk(theme="clearlooks")
 root.title("CokEnStok")
-root.iconbitmap("icons.ico")
+icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+root.iconbitmap(icon_path)
 
 # Initialize ThemedStyle
 style = ThemedStyle(root)
@@ -2372,7 +2381,8 @@ def delete_item(category, entries):
 def open_search_window():
     search_window = tk.Toplevel(root)
     search_window.title("Search")
-    search_window.iconbitmap("icons.ico")
+    icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.ico")
+    search_window.iconbitmap(icon_path)
 
     # Category selection ComboBox
     category_label = ttk.Label(search_window, text="Select Category:")
